@@ -7,7 +7,10 @@ Version: 0.0.1
 **2022.01.13:** Creation of the project. 
 
 ## Main goals of the project
-- [ ] Design definition
+- [x] Design definition
+  - [ ] Design idea: https://ggapp.io/
+  - [ ] Design pattern creation
+  - [ ] Component definition
 - [ ] Design implementation: HTML/JS/CSS
 - [ ] REST API design
 
