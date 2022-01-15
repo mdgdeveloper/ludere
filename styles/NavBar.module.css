@@ -1,0 +1,58 @@
+.container{
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: #131f39;
+    border-radius: 10px;
+    padding: 1px 5px;
+    justify-content: space-between;
+}
+
+.searchInput{
+    border: none;
+    background-color: #131f39;
+    margin-left: 10px;
+    color: white;
+    padding: 5px;
+    width: 250px;
+    
+}
+
+.searchIcon{
+    flex: 1;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.userInfo{
+    padding: 20px;
+}
+
+.userName{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.userNameSub{
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    color: rgba(255,255,255,0.7);
+}
+
+.userImage{
+    border: 2px solid rgba(255,255,255,0.4);
+}
