@@ -1,7 +1,65 @@
 import styles from "../styles/Content.module.css";
 import Image from "next/image";
+import GameList from "./GameList";
 
 const Content = () => {
+    const games = [
+        {
+            img: "/img/fifa22.jpg",
+            id: "1231231231"
+        },
+        {
+            img: "/img/itTakesTwo.jpg",
+            id: "1231231231"
+        },
+        {
+            img: "/img/rust.jpg",
+            id: "1231231231"
+        },
+        {
+            img: "/img/valorant.jpg",
+            id: "1231231231"
+        },
+        {
+            img: "/img/gtaV.jpg",
+            id: "1231231231"
+        },
+
+    ];
+
+    const lastGames = [
+        {
+            img: "/img/fifa22.jpg",
+            id: "1231231231"
+        },
+        {
+            img: "/img/itTakesTwo.jpg",
+            id: "1231231231"
+        },
+        {
+            img: "/img/rust.jpg",
+            id: "1231231231"
+        },
+        {
+            img: "/img/valorant.jpg",
+            id: "1231231231"
+        },
+        {
+            img: "/img/gtaV.jpg",
+            id: "1231231231"
+        },
+        {
+            img: "/img/fifa22.jpg",
+            id: "1231231231"
+        },
+        {
+            img: "/img/valorant.jpg",
+            id: "1231231231"
+        },
+
+
+    ];
+
   return (
     <div className={styles.container}>
       <div className={styles.featured}>
@@ -23,43 +81,11 @@ const Content = () => {
       </div>
       <div className={styles.topList}>
         <div className={styles.title}>Top 5 games</div>
-        <div className={styles.topListGames}>
-          <div className={styles.topGame}>
-            <div className={styles.topGameImg}>
-              <Image
-                src="/img/valorant.jpg"
-                alt="valorant"
-                layout="fill"
-                className={styles.topGameImg}
-              />
-            </div>
-            <div className={styles.topGameBg}></div>
-          </div>
-          <div className={styles.topGame}>
-            <div className={styles.topGameImg}>
-              <Image src="/img/fifa22.jpg" alt="fifa22" layout="fill" />
-            </div>
-            <div className={styles.topGameBg}></div>
-          </div>
-          <div className={styles.topGame}>
-            <div className={styles.topGameImg}>
-              <Image src="/img/itTakesTwo.jpg" alt="fifa22" layout="fill" />
-            </div>
-            <div className={styles.topGameBg}></div>
-          </div>
-          <div className={styles.topGame}>
-            <div className={styles.topGameImg}>
-              <Image src="/img/gtaV.jpg" alt="fifa22" layout="fill" />
-            </div>
-            <div className={styles.topGameBg}></div>
-          </div>
-          <div className={styles.topGame}>
-            <div className={styles.topGameImg}>
-              <Image src="/img/rust.jpg" alt="fifa22" layout="fill" />
-            </div>
-            <div className={styles.topGameBg}></div>
-          </div>
-        </div>
+        <GameList games={games} size={5}/>
+      </div>
+      <div className={styles.topList}>
+          <div className={styles.title}>Last added games</div>
+          <GameList games={lastGames} size={8} />
       </div>
     </div>
   );

@@ -1,0 +1,12 @@
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.topListGames {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  
+  
