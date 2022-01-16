@@ -1,0 +1,115 @@
+.container {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+.gameFeatured {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.image {
+  position: relative;
+  width: 40vw;
+  height: 25vw;
+}
+
+.gameInfo {
+  width: 35vw;
+  padding-left: 20px;
+}
+.gameSuperTitle {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.gameTitle {
+  padding: 0;
+  margin: 0;
+}
+
+.gameDesc {
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.gameButton {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: #253b69;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.gameButton:hover {
+  background: #253b69cc;
+}
+
+.topList {
+  padding-top: 50px;
+}
+
+.topListGames {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 20px;
+}
+
+.topGame {
+  position: relative;
+  width: 15vw;
+  height: 19vw;
+  
+  
+}
+
+.topGameImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+}
+
+.topGameBg{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.topGameBg:hover{
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(1,11,27,0) 100%);
+}
+
+.topGameBg:hover::after{
+    content: ".";
+    width: 25px;
+    height: 25px;
+    bottom: 20px;
+    right: 10px;
+    position: absolute;
+    background: url('/img/circular.png') no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
