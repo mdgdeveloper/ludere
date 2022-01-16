@@ -1,0 +1,38 @@
+.container{
+    width: 100%;
+    padding: 10px 40px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItem{
+    padding: 10px 10px;
+    margin: 5px 0px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menuItem:hover{
+    background-color: rgba(255,255,255,0.15);
+}
+
+.menuIcon{
+    padding-right: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.menuText{
+    height: 100%;
+    font-size: 15px;
+    font-weight: 500;
+}
