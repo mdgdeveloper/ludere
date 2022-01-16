@@ -1,0 +1,50 @@
+.container{
+ display: flex;
+ flex: 1;   
+}
+
+.left{
+    flex: 1;
+}
+
+.right{
+    flex: 3;
+    padding: 0px 20px;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.platforms{
+    font-size: 12px;
+}
+
+.stars{
+    opacity: 0.8;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    display: flex;
+}
+
+.review{
+    font-size: 13px;
+    color: #ccc;
+}
+
+.button{
+    margin-top: 15px;
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #1b2a4b;
+    color: #ccc;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #273a62;
+}

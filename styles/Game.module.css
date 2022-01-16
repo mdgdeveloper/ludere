@@ -1,0 +1,119 @@
+.container{
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    min-width: 1000px;
+}
+
+.gameInfo{
+    display: flex;
+    min-width: 1100px;
+}
+
+.gameImage{
+    margin-right: 20px;
+}
+
+
+.gameData{
+    flex: 3;
+}
+
+.image{
+    border-radius: 20px;
+}
+
+.gamePlatforms{
+    display: flex;
+}
+
+.gamePlatform{
+    margin-right: 10px;
+    font-size: 12px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #ccc;
+}
+
+.gameTitle{
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 0;
+    margin-top: -5px;
+}
+
+.gameRating{
+    display: flex;
+    align-items: center;
+    background-color: #1b2a4b;
+    width: 90px;
+    padding: 7px 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.star{
+    color: lightgreen;
+    margin-right: 10px;
+}
+
+.gameRatingNum{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.gameDesc{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.userRating{
+    width: 230px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1b2a4b;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.userStarList{
+    display: flex;
+}
+
+.userStar{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.userStar:hover{
+    color: yellow;
+}
+
+.userButtons{
+    margin-top: 30px;
+}
+
+.addButton{
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    background-color: lightsalmon;
+    cursor: pointer;
+}
+
+.pendingButton{
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    margin-right: 10px;
+    font-weight: 600;
+    color: white;
+    border-radius: 10px;
+    background-color:lightseagreen ;
+    cursor: pointer;
+}

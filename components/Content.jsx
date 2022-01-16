@@ -1,6 +1,7 @@
 import styles from "../styles/Content.module.css";
 import Image from "next/image";
 import GameList from "./GameList";
+import ReviewList from "./ReviewList";
 
 const Content = () => {
     const games = [
@@ -79,13 +80,17 @@ const Content = () => {
           </div>
         </div>
       </div>
-      <div className={styles.topList}>
+      <div className={styles.contentList}>
         <div className={styles.title}>Top 5 games</div>
         <GameList games={games} size={5}/>
       </div>
-      <div className={styles.topList}>
+      <div className={styles.contentList}>
           <div className={styles.title}>Last added games</div>
           <GameList games={lastGames} size={8} />
+      </div>
+      <div className={styles.contentList}>
+          <div className={styles.title}>Last reviews</div>
+          <ReviewList />
       </div>
     </div>
   );
