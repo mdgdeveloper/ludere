@@ -8,14 +8,18 @@ Version: 0.0.1
 
 ## Main goals of the project
 - [x] Design definition
-  - [ ] Design idea: https://ggapp.io/
-  - [ ] Design pattern creation
-  - [ ] Component definition
+  - [x] Design idea: https://ggapp.io/
+  - [x] Design pattern creation
+  - [x] Component definition
 - [ ] Design implementation: HTML/JS/CSS
+  - [x] Game Page
+  - [ ] User PAge
 - [ ] REST API design
+  - [ ] Check how to request information
+  - [ ] Request one game
+  - [ ] Request multiple games
 
 # Version Roadmap 
 - [ ] 0.0.1: Basic design definition
 - [ ] 0.1.0: Basic design implementation
 - [ ] 0.2.0: Basic Game API: REST API Complete design 
-- [ ] 0.3.0:  
