@@ -19,7 +19,6 @@ const getGame = async (id) => {
 try {
     const url = 'https://api.igdb.com/v4/games'
     const request = `fields: *; where id = ${id};`
-    console.log('request', request);
     const result = await axios.post(url,request,{
         headers: headers
     })
