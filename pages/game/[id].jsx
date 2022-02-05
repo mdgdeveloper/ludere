@@ -2,6 +2,12 @@ import styles from "../../styles/Game.module.css";
 import Image from "next/image";
 import { BsStarFill } from "react-icons/bs";
 
+import { useEffect } from 'react';
+
+// GameUtils
+import { getGame } from "../../utils/gameUtils";
+import react from "react";
+
 const Game = () => {
   const game = {
     name: "Fifa 22",
@@ -10,6 +16,18 @@ const Game = () => {
     rating: 3.8,
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore unde, reiciendis architecto recusandae sed minima, rem doloremque assumenda repellat amet sapiente. Asperiores maxime dolores sint illum perspiciatis? Deserunt, odit explicabo.",
   };
+
+  useEffect( () => {
+    const testGame = async () => {
+      const result = await getGame(740);
+      return result;
+    }
+
+    const result = testGame();
+    console.log('result', result);
+
+  }, []);
+  
 
   return (
     <div className={styles.container}>

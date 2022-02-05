@@ -1,0 +1,2 @@
+POST https://id.twitch.tv/oauth2/token?client_id=olkby41g61usnz0me31lvk88shp7mv&client_secret=zwm03lg3nbo2oi06pdlv6rji0e1ay3&grant_type=client_credentials
+

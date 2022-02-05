@@ -1,0 +1,5 @@
+POST https://api.igdb.com/v4/covers
+Client-ID: olkby41g61usnz0me31lvk88shp7mv
+Authorization: Bearer kfsnorcjasgppqkkgl1bqebi79rohq
+
+fields alpha_channel,animated,checksum,game,height,image_id,url,width; where game=740;

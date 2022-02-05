@@ -26,3 +26,6 @@ Version: 0.1.0
 - [x] 0.0.1: Basic design definition
 - [x] 0.1.0: Basic design implementation
 - [ ] 0.2.0: Basic Game API: REST API Complete design 
+
+## Pending tasks 
+- [ ] 
