@@ -5,7 +5,7 @@ import { BsStarFill } from "react-icons/bs";
 import { useEffect } from 'react';
 
 // GameUtils
-import { getGame } from "../../utils/gameUtils";
+import { getMultipleGames } from "../../utils/gameUtils";
 import react from "react";
 
 const Game = () => {
@@ -19,7 +19,7 @@ const Game = () => {
 
   useEffect( () => {
     const testGame = async () => {
-      const result = await getGame(740);
+      const result = await getMultipleGames([740,170]);
       return result;
     }
 

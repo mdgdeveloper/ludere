@@ -31,8 +31,21 @@ try {
 }
 
 //getMultipleGames 
-const getMultipleGames = (id) => {
-
+const getMultipleGames = async (id) => {
+    try {
+        console.log('id', id);
+        const idString= id.map( (element,i) => (element.id)).join();
+        console.log('idString', idString);
+        const url = 'https://api.igdb.com/v4/games'
+        const request = `fields: *; where id = (${idString});`
+        const result = await axios.post(url,request,{
+            headers: headers
+        })
+        return result.data;
+        
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 // getGamesMonth
