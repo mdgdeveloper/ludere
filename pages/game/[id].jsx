@@ -2,11 +2,6 @@ import styles from "../../styles/Game.module.css";
 import Image from "next/image";
 import { BsStarFill } from "react-icons/bs";
 
-import { useEffect } from 'react';
-
-// GameUtils
-import { getMultipleGames } from "../../utils/gameUtils";
-import react from "react";
 
 const Game = () => {
   const game = {
@@ -17,17 +12,6 @@ const Game = () => {
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore unde, reiciendis architecto recusandae sed minima, rem doloremque assumenda repellat amet sapiente. Asperiores maxime dolores sint illum perspiciatis? Deserunt, odit explicabo.",
   };
 
-  useEffect( () => {
-    const testGame = async () => {
-      const result = await getMultipleGames([740,170]);
-      return result;
-    }
-
-    const result = testGame();
-    console.log('result', result);
-
-  }, []);
-  
 
   return (
     <div className={styles.container}>
