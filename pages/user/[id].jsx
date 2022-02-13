@@ -23,6 +23,9 @@ const User = () => {
         </div>
         <div className={styles.userSummary}>User Summary</div>
       </div>
+      <div className={styles.userInfoMain}>
+        User Main
+      </div>
     </div>
   );
 };
