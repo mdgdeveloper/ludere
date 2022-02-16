@@ -1,12 +1,14 @@
-import React from "react";
-import styles from "../../styles/Month.module.css";
+import styles from '../../styles/user/Month.module.css';
 
 const Month = () => {
-  return (
-    <div className={styles.container}>
-      <div className={styles.main}>Month</div>
-    </div>
-  );
+	return (
+		<div className={styles.container}>
+			<div className={styles.main}>
+				<div className={styles.monthName}>January</div>
+				<div className={styles.monthCount}>14</div>
+			</div>
+		</div>
+	);
 };
 
 export default Month;

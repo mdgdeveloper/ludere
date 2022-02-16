@@ -1,11 +1,11 @@
-.container{
-    display: flex;
+.container {
+	display: flex;
 }
 
-.sidebar{
-    flex: 1;
+.sidebar {
+	flex: 1;
 }
 
-.content{
-    flex: 4;
+.content {
+	flex: 4;
 }

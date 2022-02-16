@@ -1,8 +1,6 @@
-//  User Utils Core 
+//  User Utils Core
 //  Developed by Sergio Madrigal
 
-const newUser = (userName, password, email, avatarID) => {
+const newUser = (userName, password, email, avatarID) => {};
 
-}
-
-export { newUser }
+export { newUser };

@@ -1,52 +1,54 @@
-.container{
-    flex: 1;
- 
+.container {
+	flex: 1;
 }
 
 .gameFive {
-    position: relative;
-    width: 15vw;
-    height: 19vw;
- }
+	position: relative;
+	width: 15vw;
+	height: 19vw;
+}
 
- .gameEight {
-    position: relative;
-    width: 10.5vw;
-    height: 13.5vw;
- }
-  
-  .topGameImg{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      
-  }
-  
-  .topGameBg{
-      z-index: 1;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      cursor: pointer;
-  }
-  
-  .topGameBg:hover{
-      background: rgb(2,0,36);
-      background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(1,11,27,0) 100%);
-  }
-  
-  .topGameBg:hover::after{
-      content: ".";
-      width: 25px;
-      height: 25px;
-      bottom: 20px;
-      right: 10px;
-      position: absolute;
-      background: url('/img/circular.png') no-repeat;
-      background-size: cover;
-      opacity: 0.7;
-  }
+.gameEight {
+	position: relative;
+	width: 10.5vw;
+	height: 13.5vw;
+}
+
+.topGameImg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.topGameBg {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.topGameBg:hover {
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		0deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(1, 11, 27, 0) 100%
+	);
+}
+
+.topGameBg:hover::after {
+	content: '.';
+	width: 25px;
+	height: 25px;
+	bottom: 20px;
+	right: 10px;
+	position: absolute;
+	background: url('/img/circular.png') no-repeat;
+	background-size: cover;
+	opacity: 0.7;
+}

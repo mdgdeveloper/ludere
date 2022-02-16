@@ -1,38 +1,36 @@
-.container{
-    padding: 50px;
+.container {
+	padding: 50px;
 }
 
-.userPanelHeader{
-    padding: 20px;
-    display: flex;
+.userPanelHeader {
+	padding: 20px;
+	display: flex;
 }
 
-.userProfile{
-    flex: 1;
-    display: flex;
-    background-color: rgba(255,255,255,.1);
-    margin-right: 20px;
-    padding: 20px;
-    border-radius: 25px;
+.userProfile {
+	flex: 1;
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.1);
+	margin-right: 20px;
+	padding: 20px;
+	border-radius: 25px;
 }
 
-.userImage{
-    padding: 0px 20px;
+.userImage {
+	padding: 0px 20px;
 }
 
-.userName{
-    font-size: 30px;
-    margin: 0;
+.userName {
+	font-size: 30px;
+	margin: 0;
 }
 
-.userAdditionalInfo{
-    margin: 0;
-    font-size: 15px;
-    font-weight: 400;
+.userAdditionalInfo {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 400;
 }
 
-
-.userSummary{
-    flex: 2;
+.userSummary {
+	flex: 2;
 }
-
