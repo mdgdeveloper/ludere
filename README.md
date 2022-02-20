@@ -18,7 +18,7 @@ Version: 0.1.0
   - [x] Component definition
 - [ ] Design implementation: HTML/JS/CSS
   - [x] Game Page
-  - [ ] User PAge
+  - [ ] User Page
 - [ ] REST API design
   - [ ] Check how to request information
   - [ ] Request one game
@@ -31,5 +31,12 @@ Version: 0.1.0
 - [ ] 0.2.0: Basic Game API: REST API Complete design
 
 ## Pending tasks
+### Users 
+- [ ] 21.02.22 | Complete draft version of the main dashboard of the user. 
 
-- [ ]
+### Data
+- [ ] 22.02.22 | Define data model for storing the user data 
+- [ ] 22.02.22 | Define data model for storing the gameList data for each userId
+- [ ] 22.02.22 | Implement both data models in MongoDB 
+- [ ] 22.02.22 | Define the logic to request information of a user through the API 
+
