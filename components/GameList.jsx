@@ -13,4 +13,19 @@ const GameList = ({ games, size }) => {
 	);
 };
 
+GameList.propTypes = {
+	games: [
+		{
+			id: Number,
+			size: Number,
+		},
+	],
+	size: Number,
+};
+
+GameList.defaultProps = {
+	games: [],
+	size: 0,
+};
+
 export default GameList;

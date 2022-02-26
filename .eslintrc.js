@@ -19,7 +19,7 @@ module.exports = {
 		ecmaFeatures: {
 			jsx: true,
 		},
-		ecmaVersion: 13,
+		ecmaVersion: 2020,
 		sourceType: 'module',
 	},
 	plugins: ['react'],
