@@ -1,10 +1,16 @@
 .container {
 	width: 20vw;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0.05);
 	margin-bottom: 25px;
 	padding: 15px;
-	border-radius: 20px;
+	border-radius: 15px;
 	cursor: pointer;
+	color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.container:hover {
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 .main {
@@ -14,10 +20,17 @@
 }
 
 .monthCount {
-	font-size: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30px;
 	font-weight: 700;
 	padding: 0px 10px;
-	margin-top: -10px;
+	width: 6vw;
+	text-align: center;
+	background-color: rgba(54, 54, 54, 0.4);
+	margin-top: 10px;
+	border-radius: 20px;
 }
 
 .monthInfo {
@@ -25,32 +38,34 @@
 }
 
 .monthName {
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 30px;
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 20px;
 	margin-top: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
 .monthGames {
 	display: flex;
-	justify-content: space-around;
 }
 
 .monthGameData {
-	padding: 5px 10px;
+	padding: 4px 8px;
 	background-color: red;
 	border-radius: 5px;
+	font-size: 12px;
+	font-weight: 700;
+	margin-right: 10px;
 }
 
 .green {
-	background-color: limegreen;
+	background-color: #00a7e1;
 }
 
 .blue {
-	background-color: rgb(80, 106, 255);
+	background-color: #007ea7;
 }
 
 .red {
-	background-color: orangered;
+	background-color: #003459;
 }
