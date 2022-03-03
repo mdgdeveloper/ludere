@@ -1,6 +1,7 @@
 import styles from '../../styles/user/Month.module.css';
 import { useState } from 'react';
 import Modal from '../tools/Modal';
+import MonthDetail from './MonthDetail';
 
 const Month = ({ monthData }) => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,9 @@ const Month = ({ monthData }) => {
 	};
 	return (
 		<>
-			<Modal status={isOpen} setIsOpen={setIsOpen} />
+			<Modal status={isOpen} setIsOpen={setIsOpen}>
+				<MonthDetail />
+			</Modal>
 			<div className={styles.container} onClick={handleClick}>
 				<div className={styles.main}>
 					<div className={styles.monthCount}>{monthData.totalGames}</div>

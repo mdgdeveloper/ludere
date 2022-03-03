@@ -1,6 +1,7 @@
 import styles from '../../styles/tools/Modal.module.css';
+import PropTypes from 'prop-types';
 
-const Modal = ({ status = false, setIsOpen }) => {
+const Modal = ({ status = false, setIsOpen, children }) => {
 	const handleClickInside = event => {
 		event.stopPropagation();
 	};
@@ -10,7 +11,7 @@ const Modal = ({ status = false, setIsOpen }) => {
 			{status ? (
 				<div className={styles.modalContainer} onClick={() => setIsOpen(false)}>
 					<div className={styles.modalBlock} onClick={handleClickInside}>
-						Test
+						{children}
 					</div>
 				</div>
 			) : (
@@ -23,6 +24,7 @@ const Modal = ({ status = false, setIsOpen }) => {
 Modal.propTypes = {
 	status: Boolean,
 	setIsOpen: () => Boolean,
+	children: PropTypes.node.isRequired,
 };
 
 export default Modal;
