@@ -35,4 +35,26 @@
 	color: black;
 	z-index: 999;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.modalClose {
+	width: 40px;
+	height: 40px;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	font-weight: 800;
+	border-radius: 10px;
+	border: solid 2px #aaaaaa;
+	text-transform: uppercase;
+	color: #aaaaaa;
+	cursor: pointer;
+}
+
+.modalClose:hover {
+	background-color: rgba(255, 255, 255, 0.3);
 }

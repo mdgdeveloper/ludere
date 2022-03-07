@@ -1,6 +1,7 @@
 import styles from '../styles/GameCard.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 const GameCard = ({ game, size }) => {
 	const sizeStyle = size => {
@@ -30,6 +31,11 @@ const GameCard = ({ game, size }) => {
 			</Link>
 		</div>
 	);
+};
+
+GameCard.propTypes = {
+	game: PropTypes.object,
+	size: Number,
 };
 
 export default GameCard;

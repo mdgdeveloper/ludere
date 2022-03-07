@@ -11,7 +11,10 @@ const Modal = ({ status = false, setIsOpen, children }) => {
 			{status ? (
 				<div className={styles.modalContainer} onClick={() => setIsOpen(false)}>
 					<div className={styles.modalBlock} onClick={handleClickInside}>
-						{children}
+						<div className={styles.modalInside}>{children}</div>
+						<div className={styles.modalClose} onClick={() => setIsOpen(false)}>
+							x
+						</div>
 					</div>
 				</div>
 			) : (
