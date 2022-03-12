@@ -1,5 +1,6 @@
 import styles from '../../styles/tools/Modal.module.css';
 import PropTypes from 'prop-types';
+import CancelIcon from '@mui/icons-material/Cancel';
 
 const Modal = ({ status = false, setIsOpen, children }) => {
 	const handleClickInside = event => {
@@ -13,7 +14,7 @@ const Modal = ({ status = false, setIsOpen, children }) => {
 					<div className={styles.modalBlock} onClick={handleClickInside}>
 						<div className={styles.modalInside}>{children}</div>
 						<div className={styles.modalClose} onClick={() => setIsOpen(false)}>
-							x
+							<CancelIcon />
 						</div>
 					</div>
 				</div>
@@ -25,8 +26,8 @@ const Modal = ({ status = false, setIsOpen, children }) => {
 };
 
 Modal.propTypes = {
-	status: Boolean,
-	setIsOpen: () => Boolean,
+	status: PropTypes.bool,
+	setIsOpen: PropTypes.func,
 	children: PropTypes.node.isRequired,
 };
 

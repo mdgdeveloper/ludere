@@ -1,22 +1,32 @@
 .container {
-	width: 20vw;
-	background-color: rgba(255, 255, 255, 0.05);
-	margin-bottom: 25px;
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 21%;
+	height: 100px;
+	background-color: rgba(255, 255, 255, 0.1);
 	padding: 15px;
 	border-radius: 15px;
 	cursor: pointer;
 	color: rgba(255, 255, 255, 0.8);
 	box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+	height: 100px;
 }
 
 .container:hover {
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.08);
+}
+
+.month {
+	display: flex;
+	justify-content: space-between;
 }
 
 .main {
 	display: flex;
-	align-content: flex-start;
-	margin-top: -10px;
+	align-items: center;
+	height: 100%;
+	margin-top: -5px;
+	gap: 10px;
 }
 
 .monthCount {
@@ -26,9 +36,10 @@
 	font-size: 30px;
 	font-weight: 700;
 	padding: 0px 10px;
-	width: 6vw;
+	width: 60px;
+	height: 60px;
 	text-align: center;
-	background-color: rgba(54, 54, 54, 0.4);
+	background-color: rgba(24, 24, 24, 0.4);
 	margin-top: 10px;
 	border-radius: 20px;
 }
@@ -39,7 +50,7 @@
 
 .monthName {
 	text-transform: capitalize;
-	font-weight: 500;
+	font-weight: 300;
 	font-size: 20px;
 	margin-top: 5px;
 	margin-bottom: 10px;
@@ -56,6 +67,7 @@
 	font-size: 12px;
 	font-weight: 700;
 	margin-right: 10px;
+	border: 1px solid lightblue;
 }
 
 .green {

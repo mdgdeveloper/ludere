@@ -1,5 +1,6 @@
 import styles from '../../styles/user/MonthDetail.module.css';
 import Image from 'next/image';
+import PropTypes from 'prop-types';
 
 const MonthDetail = ({ month }) => {
 	const example = {
@@ -50,7 +51,7 @@ const MonthDetail = ({ month }) => {
 };
 
 MonthDetail.propTypes = {
-	month: String,
+	month: PropTypes.string,
 };
 
 export default MonthDetail;

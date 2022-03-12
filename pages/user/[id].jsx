@@ -1,6 +1,7 @@
 import styles from '../../styles/User.module.css';
 import Image from 'next/image';
 import MonthList from '../../components/user/MonthList';
+import Widget from '../../components/user/Widget';
 
 const User = () => {
 	return (
@@ -13,6 +14,7 @@ const User = () => {
 							alt='avatar'
 							width={150}
 							height={150}
+							className={styles.image}
 						/>
 					</div>
 					<div className={styles.userInfo}>
@@ -21,7 +23,11 @@ const User = () => {
 						<h3 className={styles.userAdditionalInfo}>Last login: Sat 23</h3>
 					</div>
 				</div>
-				<div className={styles.userSummary}>User Summary</div>
+				<div className={styles.userSummary}>
+					<Widget title='Total Games Played' games='150' />
+					<Widget title='Last Month' games='3' />
+					<Widget title='Last Year' games='35' />
+				</div>
 			</div>
 			<div className={styles.userInfoMain}>
 				<MonthList />
